@@ -40,5 +40,8 @@
     },
     "devDependencies": {
         "react-doc-generator": "^1.2.5"
+    },
+    "engines": {
+        "node": ">= 10.16.3"
     }
 }
