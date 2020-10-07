@@ -22,8 +22,11 @@ export function Simulator() {
       "isSwitchSelected": decideSimulate === "change",
       "numbersOfRound": numberSimulate
     };
+
+    // set global loading
     dispatch(loadingData(true));
     
+    // server request  
     axios
     .post(
         `${mainServer}${simulatorUrls.simulate}`,
@@ -33,10 +36,11 @@ export function Simulator() {
         return res.data;
     })
     .then(result => {
-        console.log(result)
+        // update data
         dispatch(updateBoard(result));
     });
   }
+
   return (
     <div className={styles.main}>
       <div className={styles.row}>

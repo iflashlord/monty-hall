@@ -12,10 +12,13 @@ function App() {
         <h1 className="App-title">Let’s Make a Deal
         <br />Simulator!</h1>
         
+        {/* Gate features component */}
         <Gates />
         
+        {/* Simulator features component */}
         <Simulator />
 
+        {/* Result features component */}
         <Result />
 
       </header>

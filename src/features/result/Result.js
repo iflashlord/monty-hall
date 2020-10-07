@@ -6,7 +6,6 @@ import {
   selectLoading
 } from './resultSlice';
 import man from '../../assets/man.svg';
-
 import styles from './Result.module.css';
 
 export function Result() {
