@@ -24,3 +24,5 @@ export function Gates() {
     </div>
   );
 }
+
+export default Gates;

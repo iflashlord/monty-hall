@@ -5,6 +5,8 @@ import {
   lostCount,
   selectLoading
 } from './resultSlice';
+import man from '../../assets/man.svg';
+
 import styles from './Result.module.css';
 
 export function Result() {
@@ -13,6 +15,7 @@ export function Result() {
   const loading = useSelector(selectLoading);
 
   return (
+    <div className={styles.man}>
     <div>
       <div className={styles.row}>
         <div className={styles.result_board}>
@@ -27,5 +30,9 @@ export function Result() {
         </div>
       </div>
     </div>
+      <img src={man} alt="Conductor" />
+    </div>
   );
 }
+
+export default Result;

@@ -1,5 +1,4 @@
 import React from 'react';
-import man from './assets/man.svg';
 import { Simulator } from './features/simulator/Simulator';
 import { Result } from './features/result/Result';
 import { Gates } from './features/gates/Gates';
@@ -17,13 +16,9 @@ function App() {
         
         <Simulator />
 
-        <div className="App-man">
-          <Result />
-          <img src={man} alt="Conductor" />
-        </div>
+        <Result />
 
       </header>
-
        
     </div>
   );

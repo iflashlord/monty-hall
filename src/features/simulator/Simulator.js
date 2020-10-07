@@ -48,7 +48,9 @@ export function Simulator() {
             value={numberSimulate}
             type="number"
             min="10" max="99999"
+            data-testid="simulator-number"
             disabled={loading}
+            autoFocus={true}
             onChange={e => setNumberSimulate(e.target.value)}
           />
   
@@ -57,13 +59,13 @@ export function Simulator() {
           className={styles.group}
         >
           <label className={styles.decision}>Stick
-            <input type="radio" value="stick" name="decide" checked={decideSimulate === 'stick'} htmlFor="decide1"/>
-            <span className={styles.checkmark}></span>
+            <input type="radio" value="stick" name="decide" data-testid="input-radio-stick" defaultChecked={decideSimulate === 'stick'} htmlFor="decide1"/>
+            <span className={styles.radio}></span>
           </label> 
           
           <label className={styles.decision}>Change
-            <input type="radio" value="change" name="decide" checked={decideSimulate === 'change'} htmlFor="decide2"/> 
-            <span className={styles.checkmark}></span>
+            <input type="radio" value="change" name="decide" data-testid="input-radio-change" defaultChecked={decideSimulate === 'change'} htmlFor="decide2"/> 
+            <span className={styles.radio}></span>
           </label>
         </div>
 
@@ -71,7 +73,6 @@ export function Simulator() {
             className={styles.buttonSimulate}
             aria-label="Simulate"
             disabled={loading}
-            // onClick={() => dispatch(calculate([Number(numberSimulate) || 0, String(decideSimulate) || 'change']))}
             onClick={() => calculateServer()}
           >
             {loading ? "Loading..." : "Simulate"}
@@ -96,3 +97,5 @@ export function Simulator() {
     </div>
   );
 }
+
+export default Simulator;

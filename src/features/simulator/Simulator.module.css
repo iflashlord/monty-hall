@@ -63,7 +63,7 @@
     cursor: pointer;
 }
 
-.checkmark {
+.radio {
     position: absolute;
     top: 0;
     left: 0;
@@ -73,32 +73,32 @@
     border-radius: 4px;
 }
 
-.decision:hover input~.checkmark {
+.decision:hover input~.radio {
     background-color: #b0b0b0;
 }
 
-.decision input:checked~.checkmark {
+.decision input:checked~.radio {
     background-color: #129d32;
 }
 
-.checkmark:after {
+.radio:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-.decision input:checked~.checkmark:after {
+.decision input:checked~.radio:after {
     display: block;
 }
 
-.decision .checkmark:after {
+.decision .radio:after {
     top: 3px;
     left: 7px;
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 9px solid transparent;
-    border-left: 13px solid white;
+    border-left: 13px solid #fff;
 }
 
 .buttonSimulate,

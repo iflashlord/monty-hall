@@ -58,3 +58,29 @@
 .car {
     background: #599C4F;
 }
+
+.man {
+    height: 50vmin;
+    width: 25vw;
+    pointer-events: none;
+    position: absolute;
+    right: 0px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .man {
+        animation: man-float infinite 3s ease-in-out;
+    }
+}
+
+@keyframes man-float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+}
