@@ -9,6 +9,22 @@ Components
 
 
 -----
+**src/features/gates/Gates.js**
+
+### 1. Gates
+
+
+
+
+-----
+**src/features/result/Result.js**
+
+### 1. Result
+
+
+
+
+-----
 **src/features/simulator/Simulator.js**
 
 ### 1. Simulator
