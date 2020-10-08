@@ -10,7 +10,7 @@
 
 .result_board {
     background: #fff;
-    min-width: 150px;
+    min-width: 160px;
     height: 60px;
     display: flex;
     justify-content: space-around;
@@ -72,6 +72,33 @@
         animation: man-float infinite 3s ease-in-out;
     }
 }
+
+@media (max-width: 575.98px) {
+    .man {
+        position: relative;
+        margin-top: 20vh;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .man {
+        right: auto;
+        left: auto;
+    }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {}
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {}
 
 @keyframes man-float {
     0% {

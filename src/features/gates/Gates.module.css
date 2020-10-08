@@ -9,16 +9,44 @@
 }
 
 .gate {
-    width: 160px;
+    width: 20vh;
     background: #fff;
-    height: 160px;
+    height: 20vh;
     border-radius: 50%;
-    margin: 20px;
+    margin: 2vw;
     text-align: center;
-    line-height: 160px;
-    font-size: 60px;
+    line-height: 20vh;
+    font-size: 3em;
     border: 10px solid #ED7D2B;
     outline: 8px solid #fff;
     outline-style: dashed;
     outline-offset: 5px;
 }
+
+@media (max-width: 575.98px) {
+    .row {
+        margin: 5vh 0;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .gate {
+        width: 20vw;
+        height: 20vw;
+        margin: 2vw;
+        line-height: 20vw;
+    }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {}
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {}
