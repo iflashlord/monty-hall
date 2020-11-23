@@ -8,13 +8,6 @@ The concept of the game is that the player sees three closed doors - behind one 
 The question is whether the chances of winning increase if the player changes the door.
 Source: https://en.wikipedia.org/wiki/Monty_Hall_problem
 
-## So the task is:
-
-Build an application that proves the paradox. The application should be able to simulate a given number of games and whether you change the door or not. The technical requirement for the solution is to build a react app with a backend of your choice. In the interface you should be able to enter a number of simulations and choose whether or not to change the door. Then be able to press a button that starts the simulation by calling backend that performs the requested number of simulated games. When backend answers then the results of the simulations should be printed. Testing should be included in the assignment.
-
-
-
-## Solution
 
 ### Front-end: React, Redux
 
